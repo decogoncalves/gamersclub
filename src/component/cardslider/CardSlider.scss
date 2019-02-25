@@ -1,0 +1,25 @@
+div.carousel {
+  border: none !important;
+  padding: 0!important;
+  height: 15rem !important;
+  .carousel-inner {
+    border: none !important;
+    padding: 0!important;
+    margin-left: 2%;
+    .row.carousel-item {
+      display: none;
+      border: none !important;
+    }
+    .row.carousel-item.active {
+      display: flex;
+      height: 12rem !important;
+      border: none !important;
+      margin: 0!important;
+      padding-top: 2rem;
+    }
+  }
+  ol.carousel-indicators{
+      right: -63%;
+      bottom: 85%;
+  }
+}
