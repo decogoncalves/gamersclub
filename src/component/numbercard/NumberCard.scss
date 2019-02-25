@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins|Teko");
+div.number-card {
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  .card {
+    border-radius: 2px !important;
+    background-image: linear-gradient(
+      180deg,
+      rgba(238, 238, 238, 0.1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ) !important;
+    background-color: #27293c !important;
+    border: none !important;
+    height: 7.5rem;
+    .card-body {
+      padding: 1.4rem 1rem 1.4rem 0.5rem !important;
+      section {
+        font-family: "Teko", sans-serif;
+        font-size: 2.2rem;
+        line-height: 1.2rem;
+        color: #2788c8;
+        p {
+          font-size: 1rem;
+          color: #fff;
+          white-space: nowrap;
+        }
+      }
+      section.text-ok {
+        color: #92aa00;
+      }
+    }
+  }
+  .card:not(:first-child) {
+    margin-left: 0.2rem;
+  }
+  @media (min-width: 1400px) {
+    .card {
+      -webkit-flex: 0 0 41%;
+      flex: 0 0 41%;
+      max-width: 41%;
+    }
+  }
+}

@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins|Teko");
+header {
+  background-color: #272940;
+  background-image: url("../../imgs/header-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.3);
+  border-radius: 2px 2px 0 0;
+  border: 1px solid #333548;
+  border-bottom: none;
+  padding: 0 !important;
+  z-index: 1;
+  .navbar {
+    padding: 0;
+    .navbar-brand {
+      margin-left: 25px;
+      img {
+        border-radius: 50%;
+        border: 2px solid #95b200;
+        padding: 0;
+        margin-top: -1rem;
+      }
+      section {
+        color: #ffffff;
+        font-size: 0.9rem;
+        display: inline-block;
+        p {
+          margin: 0.4rem 0 0 1rem;
+        }
+        p.little {
+          color: #7c7da3;
+          font-size: 0.7rem;
+          margin-top: 0;
+        }
+      }
+    }
+    div.expertise-container {
+      width: 50%;
+      position: relative;
+      section.expertise {
+        color: #ffffff;
+        font-family: "Teko", sans-serif;
+        font-size: 1.2rem;
+        display: inline-flex;
+        @media (max-width: 1000px) {
+          display: none;
+        }
+        span {
+          margin-left: -0.5rem;
+        }
+        img {
+          margin-left: 0.5rem;
+        }
+      }
+      section.expertise.top {
+        position: absolute;
+        top: -240%;
+        img.flip {
+          transform: scaleY(-1);
+        }
+      }
+      section.expertise.bottom {
+        position: absolute;
+        top: 90%;
+      }
+      section.expertise.first {
+        left: 12.5%;
+      }
+      section.expertise.second {
+        left: 30%;
+      }
+      section.expertise.third {
+        left: 61.5%;
+      }
+      section.expertise.fourth {
+        left: 90%;
+      }
+      @media (max-width: 767px) {
+        div.progress {
+          display: none;
+        }
+      }
+      div.progress {
+        height: 0.7rem;
+        background-color: #27293c;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.41);
+        .progress-bar {
+          border: 2px solid #27293c;
+          border-radius: 7px;
+          background-image: linear-gradient(to right, #5c3abd 0%, #77dbff 100%);
+        }
+        .progress-bar.casual {
+          width: 26%;
+        }
+        .progress-bar.competitive {
+          width: 51%;
+        }
+        .progress-bar.amateur {
+          width: 76%;
+        }
+        .progress-bar.pro {
+          width: 100%;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      section.shields {
+        display: none;
+      }
+    }
+    section.shields {
+      line-height: 59px;
+      img {
+        margin: 0 0.5rem;
+      }
+      span {
+        color: #ffffff;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        padding: 2px 9px;
+        margin: 0 0.5rem;
+      }
+    }
+    @media (max-width: 767px) {
+      .patent {
+        display: none;
+      }
+    }
+    .patent {
+      height: 5rem;
+      line-height: 4.5rem;
+      padding: 0 1rem;
+      background-image: radial-gradient(circle 58px, #19f3ff 0%, #3883db 100%);
+    }
+  }
+}
